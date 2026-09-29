@@ -123,7 +123,7 @@ print("Maximum     :", np.max(dac_waveform))
 # EXPORT ESP32 WAVEFORM BUFFER
 # ---------------------------------------
 
-with open("waveform_buffer.h", "w") as file:
+with open("sih_esp32/include/waveform_buffer.h", "w") as file:
 
     file.write("#ifndef WAVEFORM_BUFFER_H\n")
     file.write("#define WAVEFORM_BUFFER_H\n\n")
@@ -240,7 +240,7 @@ print("File: lfm_chirp.wav")
 
 import re
 
-with open("waveform_buffer.h", "r") as file:
+with open("sih_esp32/include/waveform_buffer.h", "r") as file:
     header_content = file.read()
 
 # Extract waveform values from the C array
